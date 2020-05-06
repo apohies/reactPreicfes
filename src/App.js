@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Caja1 from './component/caja1';
+import axios from "axios";
 import FormularioInstituto from './component/formularioColegio';
-import axios from 'axios';
+import Caja1 from './component/caja1';
+import Datatable from './component/dataTable';
 
 
 class App extends Component 
@@ -43,23 +42,11 @@ class App extends Component
                 <div className="card-body">
                 <div className="row">
                 {this.state.items.map(intitution=><Caja1 parametros={intitution}></Caja1>)}
-                 </div>   
+                 </div>
+                <Datatable></Datatable>   
                 </div>
-        
-    </div> 
-
-
-    //return  this.props.tasks.map(tasks => <Tarea tasks={tasks} key={tasks.id}/>);
-        
-        
-        
-
+                </div>
     
+    }
 }
-}
-
-
-
-
-
 export default App;
