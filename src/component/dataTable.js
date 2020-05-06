@@ -5,7 +5,7 @@ import axios from 'axios';
 class Datatable extends Component {
 
     constructor(props) {
-        super(props);
+        super();
         
         this.data = "";
 
