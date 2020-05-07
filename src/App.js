@@ -3,8 +3,8 @@ import axios from "axios";
 import FormularioInstituto from './component/formularioColegio';
 import Caja1 from './component/caja1';
 import Datatable from './component/dataTable';
-import Modal from './component/modal/Modal';
-import Modal1 from './component/modal/Modal1';
+import ModalMDB from './component/modalMDB/ModalMDB'
+
 
 
 class App extends Component 
@@ -51,16 +51,7 @@ class App extends Component
     render(){
         
         return <div className="card">
-                    { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
-
-                    <button className="open-modal-btn" onClick={this.openModalHandler}>Open Modal</button>
-
-                    <Modal1
-                        className="modal"
-                        show={this.state.isShowing}
-                        close={this.closeModalHandler}>
-                        Cuerpo Modal Clase
-                    </Modal1>
+                    <ModalMDB></ModalMDB>
                     <FormularioInstituto actualizar={this.traerDatos}></FormularioInstituto>
                     <div className="card-header"> Todo los colegios</div>
                     <div className="card-body">
