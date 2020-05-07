@@ -3,7 +3,8 @@ import axios from "axios";
 import FormularioInstituto from './component/formularioColegio';
 import Caja1 from './component/caja1';
 import Datatable from './component/dataTable';
-import ModalMDB from './component/modalMDB/ModalMDB'
+import ModalMDB from './component/modalMDB/ModalMDB';
+import ImageClass from './component/image/ImageClass';
 
 
 
@@ -52,6 +53,7 @@ class App extends Component
         
         return <div className="card">
                     <ModalMDB></ModalMDB>
+                    <ImageClass></ImageClass>
                     <FormularioInstituto actualizar={this.traerDatos}></FormularioInstituto>
                     <div className="card-header"> Todo los colegios</div>
                     <div className="card-body">
