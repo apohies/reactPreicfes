@@ -60,7 +60,7 @@ class General extends Component
                         <div className="row">
                             {this.state.items.map(intitution=><Caja1 parametros={intitution}></Caja1>)}
                         </div>
-                        <Datatable></Datatable>   
+                        {/* <Datatable></Datatable>    */}
                     </div>
                 </div>
     
